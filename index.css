@@ -1,0 +1,230 @@
+ul li {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul li:hover {
+  cursor: pointer;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.3s ease-out;
+}
+
+ul li:hover::before {
+  width: 100%;
+  right: 0;
+  transition: width 0.2s ease-out, left 0.2s ease-out;
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.header {
+  background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Euclid_outsidetowerh_IMG_2487_desktop_a75e89406d.jpg);
+  height: 100vh;
+  padding: 2% 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.recent {
+  background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Star_5_12_DSC_7006_desktop_04baf467a8.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.starship {
+  background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.footer_items {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+
+}
+
+a{
+  font: 12px/24px D-DIN-Bold,Arial,Verdana,sans-serif;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 38px !important;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+  color: #8b939b;
+  transition: color 1s cubic-bezier(.25,1,.25,1),background-color 1s cubic-bezier(.25,1,.25,1);
+}
+
+ul li {
+  font: 14px/28px D-DIN-Bold, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.fill-white {
+  fill: #fff;
+}
+
+.container{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_items{
+  width: 70%;
+}
+
+.header_items ul {
+  display: flex;
+}
+
+ul li {
+  margin-right: 12px;
+}
+
+.header_burger a {
+  font: 14px/28px D-DIN-Bold, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+.launch{
+  padding-top: 30%;
+}
+
+.launch p{
+  font-family: 'D-DIN-Medium', Arial, Verdana, sans-serif;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 38px !important;
+  color: #FFFFFF;
+}
+.launch h1{
+  font-family: 'D-DIN-Bold', Arial, Verdana, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.launch button{
+  margin-top: 25px;
+  padding: 15px 45px;
+  color: white;
+  background: none;
+  border: 2px solid white;
+}
+.header_burger{
+  display:flex;
+  align-items: center;
+}
+.burger {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.burger span:nth-child(1) {
+  top: 0;
+}
+
+.burger span:nth-child(2) {
+  top: 35%;
+  transform: translateY(-50%);
+}
+
+.burger span:nth-child(3) {
+  bottom: 5px;
+}
+.animated-button {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+.animated-button .button-text {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  transition: color 0.5s;
+}
+
+.animated-button .background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  transform: translateY(100%);
+  transition: transform 0.5s;
+}
+
+.animated-button:hover .button-text {
+  color: #000000;
+}
+
+.animated-button:hover .background {
+  transform: translateY(0);
+}
